@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MainActivity.java&apos; to &apos;sos/src/com.adarsh.sos&apos;&#x0D;&#x0A;- Original project: &apos;sos&apos;&#x0D;&#x0A;- Destination element: &apos;sos/src/com.adarsh.sos&apos;&#x0D;&#x0A;- Original element: &apos;com.adarsh.sos.MainActivity.java&apos;" description="Copy compilation unit" destination="/src&lt;com.adarsh.sos" element1="/src&lt;com.adarsh.sos{MainActivity.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1424342432308" units="1" version="1.0"/>
+</session>
