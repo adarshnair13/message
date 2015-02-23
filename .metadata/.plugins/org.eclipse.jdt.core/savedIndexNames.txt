@@ -1,9 +1,5 @@
 INDEX VERSION 1.127+D:\Android\adarsh\workspace\.metadata\.plugins\org.eclipse.jdt.core
-1444109263.index
 4079104069.index
 2217017555.index
 2980114872.index
-1449185255.index
-3159378789.index
 1284074322.index
-890536683.index
