@@ -1,7 +1,0 @@
-package com.adarsh.example4;
-
-import android.app.Activity;
-
-public class MyNewActivity2 extends Activity {
-
-}

@@ -1,0 +1,14 @@
+package nnew;
+
+public class String1 {
+	char c='z';
+	boolean b= true;
+	int i=1000;
+	short s=200;
+	long l=200000000l;
+	float f=30996.77645f;
+	double d=97789920.980d;
+	System.out.print(c);
+	
+
+}

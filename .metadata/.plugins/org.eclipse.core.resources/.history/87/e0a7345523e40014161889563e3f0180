@@ -1,0 +1,91 @@
+package com.adarsh.myproject;
+
+import java.util.ArrayList;
+
+import android.database.Cursor;
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.Toast;
+
+
+public class Thirdactivity extends ActionBarActivity {
+	EditText name,place,email;
+	String name1,place1,email1;
+	//	String nam="";
+	//	String plac="";
+	//	String emai="";
+	ListView lv;
+	Newactivity dbh;
+	ArrayList<String> data;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.adarsh3);
+		name=(EditText)findViewById(R.id.editText1);
+		place=(EditText)findViewById(R.id.editText2);
+		email=(EditText)findViewById(R.id.editText3);
+		lv=(ListView)findViewById(R.id.listView1);
+
+	}
+	public void submit(View v)
+	{
+		name1=name.getText().toString();
+		place1=place.getText().toString();
+		email1=email.getText().toString();
+		dbh=new Newactivity(getApplicationContext());
+		//		if(name1.equals(nam)||(place1.equals(plac)))
+		//		{
+		//			Toast.makeText(Thirdactivity.this,"Failed-invalid email",Toast.LENGTH_SHORT).show();
+		//		}else{
+
+		long g=dbh.insertdata(name1,place1,email1);
+		if(g>0)
+		{
+			Toast.makeText(Thirdactivity.this,"Inserted",Toast.LENGTH_SHORT).show();
+		}
+		else
+		{
+			Toast.makeText(Thirdactivity.this,"Failed",Toast.LENGTH_SHORT).show();
+		}
+		//}
+	}
+	public void submmit(View v)
+	{
+		dbh=new Newactivity(getApplicationContext());
+		Cursor c=null;
+		data=new ArrayList<String>();
+		c=dbh.viewdata();
+		if(c!=null)
+		{
+			
+			if(c.moveToFirst())
+			{
+				do {
+
+					int i=c.getInt(c.getColumnIndex("id"));
+					String n=c.getString(c.getColumnIndex("name"));
+					String p=c.getString(c.getColumnIndex("place"));
+					String e=c.getString(c.getColumnIndex("email"));
+					data.add("Id :"+i+"\nName :"+n+"\nPlace :"+p+"\nEmail :"+e);
+
+				}while(c.moveToNext());
+			}
+			else
+			{
+				Toast.makeText(getApplicationContext(),"Empty database",Toast.LENGTH_SHORT).show();
+			}
+		}
+		else
+		{
+			Toast.makeText(getApplicationContext(),"Empty",Toast.LENGTH_SHORT).show();
+		}
+		ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,data);
+		lv.setAdapter(adapter);
+	}
+
+
+}

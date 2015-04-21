@@ -1,0 +1,23 @@
+package nnew;
+
+public class String1 {
+	public static void main(String[] args) {
+		char c='z';
+		boolean bool= true;
+		int i=1000;
+		short s=200;
+		long l=200000000l;
+		float f=30996.77645f;
+		double d=97789920.980d;
+		System.out.println(c);
+		System.out.println(bool);
+		System.out.println(s);
+		System.out.println(l);
+		System.out.println(f);
+		System.out.println(d);
+		System.out.println("the value of s is" +200);
+		System.out.println(+200 "the value of s is" );
+
+	}
+
+}

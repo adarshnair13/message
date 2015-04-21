@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.adarsh.myproject.MainActivity" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Contact Us"
+        app:showAsAction="never"/>    
+    <item
+        android:id="@+id/action_settings1"
+        android:orderInCategory="100"
+        android:title="Rate Us"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_settings2"
+        android:orderInCategory="100"
+        android:title="Settings"
+        app:showAsAction="never"/>
+     <item
+        android:id="@+id/action_settings3"
+        android:orderInCategory="100"
+        android:title="Exit"
+        app:showAsAction="never"/>
+     <item
+        android:id="@+id/action_settings4"
+        android:orderInCategory="100"
+        android:icon="@drawable/donnny"
+        android:title="Refresh"
+        app:showAsAction="always"/>
+    
+
+</menu>

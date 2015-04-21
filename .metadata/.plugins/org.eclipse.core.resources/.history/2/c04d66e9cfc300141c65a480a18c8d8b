@@ -1,0 +1,19 @@
+package nnew;
+
+public class String1 {
+	public static void main(String[] args) {
+		char c='z';
+		boolean bool= true;
+		int i=1000;
+		short s=200;
+		long l=200000000l;
+		float f=30996.77645f;
+		double d=97789920.980d;
+		System.out.print(c);
+		System.out.print(bool);
+		System.out.print(s);
+		System.out.print(l);
+		System.out.print(f);
+	}
+
+}

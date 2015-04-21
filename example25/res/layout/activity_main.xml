@@ -1,0 +1,237 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adarsh.example25.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="Invite People"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="Its always more fun with people around.\nGet them onboard"
+            android:textSize="8sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FF4635"
+        android:text="invite people"
+        android:textColor="#ffffff"
+        android:textSize="13dp"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout1"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="2.0" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:weightSum="2.0" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1.0"
+                android:background="#FFFDCC"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:weightSum="3.0" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/images" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="84dp"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="JOHN.S"
+                    android:textColor="#808080"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:background="#6EFF60"
+                    android:text="View Profile"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1.0"
+                android:background="#FFFDCC"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:weightSum="3.0" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:paddingLeft="10dp"
+                    android:src="@drawable/images" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="AMANDA.S"
+                    android:textColor="#808080"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:background="#6EFF60"
+                    android:text="View Profile"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="horizontal"
+            android:weightSum="2.0" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1.0"
+                android:background="#FFFDCC"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:weightSum="3.0" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:paddingLeft="10dp"
+                    android:src="@drawable/images" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="84dp"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="NICK V." />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:background="#6EFF60"
+                    android:text="View Profile"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1.0"
+                android:background="#FFFDCC"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:weightSum="3.0" >
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/images" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="84dp"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:text="AMY M." />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:background="#6EFF60"
+                    android:text="View Profile"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adarsh.example27.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3.0" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF30E0"
+            android:layout_weight="1.9" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="THE DANCE CAN REVEAL  EVERYTHING MYSTERIOUS THAT IS HIDDEN IN MUSIC, AND IT HAS THE ADDITIONAL MERIT OF  BEING HUMAN AND  PALPABLE.DANCING IS POETRY WITH ARMS AND LEGS"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FF219B"
+            android:layout_weight="0.6" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:weightSum="4.0"
+            android:layout_weight="0.5" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_weight="1.0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:src="@drawable/abc_ic_menu_copy_mtrl_am_alpha" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                 android:layout_weight="1.0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/abc_btn_check_to_on_mtrl_000" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                 android:layout_weight="1.0"
+                android:layout_width="wrap_content"
+                android:background="#000000"
+                android:layout_height="wrap_content"
+                android:src="@drawable/abc_ic_voice_search_api_mtrl_alpha" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                 android:layout_weight="1.0"
+                android:layout_width="wrap_content"
+                android:background="#000000"
+                android:layout_height="24dp"
+                android:src="@drawable/abc_ic_menu_share_mtrl_alpha" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
